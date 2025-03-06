@@ -1,0 +1,213 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Lato', sans-serif;
+}
+
+
+.contenedor{
+    max-width: 2000px;
+    margin: 0 auto;
+}
+.container{
+    height: 100vh;
+    background-image: url(../img/arriba.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.logo{
+    margin-left: 80%;
+    margin-top: 15%;
+}
+
+.navegacion{
+    margin-left: 70%;
+    margin-top: 3%;
+}
+.navegacion a{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.contenido-container{
+    display: grid;
+    grid-template-rows: 30% 70%;
+    justify-items: center;
+}
+
+.contenido-container form{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+}
+
+.contenido-container form input[type="text"]{
+    padding: 5%;
+    border: none;
+    width: 87vh;
+    height: 46%;
+    border-radius: 5px;
+
+}
+
+.contenido-container form input[type="submit"]{
+    background-color: #eb0f0f;
+    border: none;
+    width: 15vh;
+    height: 40%;
+    border-radius: 5px;
+
+}
+
+.contenido-container h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.header-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 10% 1fr 10%;
+}
+.header-container.logo{
+    grid-column: 2 / 3;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-contenedor{
+    display: grid;
+    grid-template-rows: 20% 29% 20% 28% 20%;
+    justify-items: center;
+}
+
+.modulo-titulo{
+    margin: 10px;
+}
+
+.container-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 10px;
+}
+
+.contenedor-card-hospedaje{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 10px;
+}
+
+.contenedor_card_destinos {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.contenedor_card_destinos .card {
+    position: relative;
+    width: 24%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.contenedor_card_destinos .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenedor_card_destinos .card .paiss {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px; 
+    color: white; 
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.contenedor-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 7px;
+}
+
+.destino-titulo{
+    margin: 10px;
+}
+
+.premium{
+    background-image: url(../img/hospedaje-pro.jpg);
+    background-repeat: no-repeat;
+    grid-template-columns: unset;
+    height: 20rem;
+    width: 100%;
+    background-position: center right;
+}
+
+
+@media (min-width: 768px){
+    .premium{
+        grid-template-columns: auto 30%;
+
+    }
+    .premium .info{
+        grid-column: 2 / 3;
+    }
+}
+.premium .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+
+}
+.premium .info h3{
+    text-align: center;
+    font-size: 2.2rem;
+}
+@media (min-width: 768px){
+    .premium .info h3{
+        text-align: right;
+    }
+}
+.info .boton{
+    text-decoration: none;
+    color: var(--oscuro);
+    background-color: var(--claro);
+    padding: 1rem 2rem;
+    box-shadow: 0 13px 19px -10px var(--oscuro);
+    border-radius: 10px;
+    display: block;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: all .2s ease-in;
+
+   
+}
+
+.info .boton:hover{
+    background-color: var(--primario);
+    color: var(--claro);
+    cursor: pointer;
+
+}
+
